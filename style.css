@@ -70,7 +70,9 @@ body {
     height: 100%;
     padding: 0 20px;
 }
-
+.pr_wrap{
+    width: 1333px;
+}
 
 /* Header
 -----------------------------------------------------------------------------*/
@@ -305,12 +307,13 @@ body {
     position: relative;
 }
 .products_list{
-    margin: 80px 0;
+    margin: 80px auto;
     display: table;
+    width: 1200px;
 }
 .products_list > li{
     float: left;
-    width: 383px;
+    width: 400px;
     min-height: 600px;
 }
 .products_list > li header{
@@ -318,7 +321,7 @@ body {
     height: 265px;
     position: relative;
 }
-.products_list > li a{
+.btn{
     position: absolute;
     top: 112px;
     right: -74px;
@@ -506,4 +509,207 @@ body {
 }
 .wrap_footer_menu li a{
     
+}
+.top_wrap{
+    display: table;
+}
+.top_wrap > h3{
+    font-size: 30px;
+    line-height: 24px;
+    margin: 200px 0 100px 0;
+    font-weight: bold;
+}
+.redaction_list{
+    margin-bottom: 50px;
+    display: table;
+    width: 100%;
+}
+.redaction_list li{
+    width: 376px;
+    float: left;
+    padding: 34px;
+    border-radius: 10px;
+}
+.redaction_list li:hover{
+    background: #fcff7d;
+}
+.redaction_list li h4{
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 10px;
+}
+.redaction_list li p{
+    text-align: center;
+    margin-top: 5px;
+}
+.redaction_list li .btn{
+    font-size: 18px;
+    position: initial;
+    padding: 8px 0;
+    width: 157px;
+    display: table;
+    text-align: center;
+    margin: 20px auto 0 auto;
+}
+.module_list_wrap{
+    display: table;
+    margin: 0 auto;
+}
+.module_list_wrap {
+    font-size: 18px;
+    line-height: 24px;
+    position: relative;
+}
+.module_list{
+    text-decoration: underline;
+}
+.module_list:hover{
+    text-decoration: none;
+}
+.redaction_version{
+    margin-left: 10px;
+}
+.modules_list_wrap{
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    z-index: 2;
+}
+.close_list_modules, .close_popup_window{
+    position: absolute;
+    text-indent: -999em;
+    background: url('images/icon.png') no-repeat;
+    width: 24px;
+    height: 25px;
+    background-position: -137px 0;
+    top: 10px;
+    right: 12px;
+}
+.modules_list{
+    background: #e7e7e0;
+    display: table;
+    padding: 30px;
+    z-index: 9;
+}
+.modules_list li{
+    padding: 0;
+    border-radius: none;
+    line-height: 38px;
+    font-size: 18px;
+}
+.modules_list li:hover{
+    background: none;
+}
+.bg_window_m, .bg_window_m_popup{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.redaction_footer{
+    margin: 100px 0;
+}
+.redaction_footer a{
+    background: #e2ff7f;
+    font-size: 25px;
+    line-height: 36px;
+    color: #444d60;
+    width: 279px;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.wrap_window_popup{
+    display: none;
+}
+#dont_know{
+    z-index: 9;
+}
+.dont_know_table{
+    border-collapse: inherit;
+    border-spacing: 0 20px;
+}
+.dont_know_table tr td:first-child{
+    vertical-align: middle;
+    width: 100px;
+    position: relative;
+}
+.window_popup{
+    background: #ffffff;
+    border: 3px solid #c0c0c0;
+    box-shadow: 0 0 65px rgba(0,0,0,0.37);
+    padding: 50px 34px;
+    position: absolute;
+    top: 1200px;
+    left: 50%;
+    border-radius: 5px;
+    margin-left: -284px;
+    z-index: 10;
+}
+.window_popup h4{
+    font-size: 17px;
+    color: #c60c30;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.window_popup .msg{
+    font-size: 14px;
+    color: #9a9a9a;
+    text-align: center;
+    /*margin-bottom: 20px;*/
+}
+.window_popup label{
+    font-size: 17px;
+    color: #000;
+    text-align: right;
+    margin-right: 21px;
+    float: right;
+}
+.window_popup .star{
+    font-size: 17px;
+    color: #c60c30;
+    display: block;
+    float: left;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.window_popup .text{
+    border: 1px solid #d0d0d0;
+    box-shadow: inset 0 0 18px rgba(0,0,0,0.23);
+    width: 282px;
+    font-size: 17px;
+    padding: 12px;
+    border-radius: 3px;
+    background: none;
+}
+.window_popup .textarea{
+    border: 1px solid #d0d0d0;
+    box-shadow: inset 0 0 18px rgba(0,0,0,0.23);
+    width: 282px;
+    font-size: 17px;
+    padding: 12px;
+    border-radius: 3px;
+    background: none;
+    resize: vertical;
+}
+.window_popup .btn{
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    position: inherit;
+    margin: 20px auto 0 auto;
+    display: block;
+    background: #c60c30;
+    width: 292px;
+    padding: 9px 0;
+    font-size: 22px;
 }

@@ -219,7 +219,7 @@
             </div>
         </div>
         
-        <a href="#" title="Заказать разработку сайта" class="dev_site_order">
+        <a href="#" title="Заказать разработку сайта" class="dev_site_order" id="dev_site_order">
             <span class="label_dev">Заказать разработку сайта</span>
             <img src="images/development.png" alt="" title="">
         </a>
@@ -355,9 +355,9 @@
     <div class="bg_window_m_popup"></div>
     <div class="window_popup">
         <a href="#" title="" class="close_popup_window">X</a>
-        <h4>Не знаете какой продукт выбрать? Мы Вам поможем!</h4>
+        <h4>Вы отправляете заявку разработки сайта на "1С-Битрикс"</h4>
         <div class="msg">Пожалуйста, заполните все поля со звёздочкой</div>
-        <form action="" method="post" autocomplete="off">
+        <form action="/" method="post" autocomplete="off" enctype="multipart/form-data">
             <table class="dont_know_table">
                 <tr>
                     <td>
@@ -387,15 +387,94 @@
                 </tr>
                 <tr>
                     <td>
-                        <label for="textarea_dev">Опишите нужный функционал</label>
+                        <label for="textarea_dev">Описание разработки</label>
                     </td>
                     <td>
                         <textarea cols="20" rows="5" class="textarea" name="textarea_dev" id="textarea_dev"></textarea>
                     </td>
                 </tr>
             </table>
-            <input type="submit" class="btn" name="submit_dev" id="submit_dev" value="Отправить">
+            <div class="add_file">
+                <div class="button_file">
+                    <label for="file_dev">Прикрепить файл</label>
+                    <span class="max_size_info">txt,pdf,doc,<br>docx,rtf<br>до 5Мб</span>
+                </div>
+                <div class="file_info_for_upload">
+                    <span id="name_file_for_upload">Razrabotka.doc</span>
+                    <a href="#" id="del_file_for_upload" class="file_info_icons">X</a>
+                </div>
+                <input type="file" id="file_dev" name="file" hidden="hidden">
+                <input type="hidden" name="MAX_FILE_SIZE" value="5000000">
+            </div>
+            <input type="submit" class="btn" name="submit_dev" id="submit_dev" value="Заказать разработку">
         </form>
+    </div>
+</div>
+
+<div id="buy_order" class="wrap_window_popup">
+    <div class="bg_window_m_popup"></div>
+    <div class="window_popup">
+        <a href="#" title="" class="close_popup_window">X</a>
+        <h4>Вы приобретаете "1С-Битрикс:Управление сайтом"</h4>
+        <div class="msg">Пожалуйста, заполните все поля со звёздочкой</div>
+        <form action="/" method="post" autocomplete="off" enctype="multipart/form-data">
+            <table class="dont_know_table">
+                <tr>
+                    <td>
+                        <label for="name_dev">Имя</label>
+                    </td>
+                    <td>
+                        <input type="text" class="text" name="name_buy" id="name_buy" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="tel_dev">Телефон</label>
+                        <span class="star">*</span>
+                    </td>
+                    <td>
+                        <input type="text" class="text" name="tel_buy" id="tel_buy" value="" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email_dev">E-mail</label>
+                        <span class="star">*</span>
+                    </td>
+                    <td>
+                        <input type="text" class="text" name="email_buy" id="email_buy" value="" required>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" class="btn" name="submit_buy" id="submit_buy" value="Купить">
+        </form>
+    </div>
+</div>
+
+<div id="buy_success" class="wrap_window_popup">
+    <div class="bg_window_m_popup"></div>
+    <div class="window_popup">
+        <a href="#" title="" class="close_popup_window">X</a>
+        <h4>Спасибо за покупку!</h4>
+        <p>Ваш заказ получен. Мы с Вами свяжемся в ближайшее время.</p>
+    </div>
+</div>
+
+<div id="dev_success" class="wrap_window_popup">
+    <div class="bg_window_m_popup"></div>
+    <div class="window_popup">
+        <a href="#" title="" class="close_popup_window">X</a>
+        <h4>Спасибо за заявку!</h4>
+        <p>Ваша заявка получена. Мы с Вами свяжемся в ближайшее время.</p>
+    </div>
+</div>
+
+<div id="quest_success" class="wrap_window_popup">
+    <div class="bg_window_m_popup"></div>
+    <div class="window_popup">
+        <a href="#" title="" class="close_popup_window">X</a>
+        <h4>Спасибо за заявку!</h4>
+        <p>Ваша заявка получена. Мы с Вами свяжемся в ближайшее время.</p>
     </div>
 </div>
 
